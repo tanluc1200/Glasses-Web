@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <!-- font awesome cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <!-- header section start -->
+        <header class="header">
+            <!-- Logo -->
+            <a class="logo" href="home.html">LOGO</a>
+            <!--  -->
+            <!-- Navbar -->
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="products.html">product</a>
+                    </li>
+                    <li>
+                        <a href="#!"
+                            >pages <i class="fa-solid fa-chevron-up"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="about.html">about</a>
+                            </li>
+                            <li>
+                                <a href="blogs.html">blogs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">contact</a>
+                    </li>
+                    <li>
+                        <a href="#!"
+                            >account <i class="fa-solid fa-chevron-up"></i
+                        ></a>
+                        <ul>
+                            <li>
+                                <a href="login.html">login</a>
+                            </li>
+                            <li>
+                                <a href="register.html">register</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!--  -->
+            <!-- Icons -->
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="cart.html" class="fas fa-shopping-cart"></a>
+            </div>
+            <!--  -->
+            <!-- form search -->
+            <form action="" class="search-form">
+                <input
+                    type="search"
+                    name=""
+                    id="search-box"
+                    placeholder="search here "
+                />
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+            <!--  -->
+        </header>
+        <!-- header section end -->
+        <!-- home section start -->
+        <section class="home">
+            <div
+                class="slide active"
+                style="background: url(images/home-bg-1.png)"
+            >
+                <div class="content">
+                    <span>protect your eyes </span>
+                    <h3>up to 50% off</h3>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+            </div>
+            <div class="slide" style="background: url(images/home-bg-2.png)">
+                <div class="content">
+                    <span>protect your eyes </span>
+                    <h3>up to 50% off</h3>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+            </div>
+            <div class="slide" style="background: url(images/home-bg-3.png)">
+                <div class="content">
+                    <span>protect your eyes </span>
+                    <h3>up to 50% off</h3>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+            </div>
+            <div
+                onclick="prev()"
+                id="prev-slide"
+                class="fas fa-angle-left"
+            ></div>
+            <div
+                onclick="next()"
+                id="next-slide"
+                class="fas fa-angle-right"
+            ></div>
+        </section>
+        <!-- home section end -->
+        <!-- footer section start -->
+        <footer class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>quick link</h3>
+                    <a href="index.html">
+                        <i class="fas fa-angle-right"></i> home</a
+                    >
+                    <a href="products.html">
+                        <i class="fas fa-angle-right"></i> products</a
+                    >
+                    <a href="about.html">
+                        <i class="fas fa-angle-right"></i> about</a
+                    >
+                    <a href="blogs.html">
+                        <i class="fas fa-angle-right"></i> blogs</a
+                    >
+                    <a href="contact.html">
+                        <i class="fas fa-angle-right"></i> contact</a
+                    >
+                    <a href="login.html">
+                        <i class="fas fa-angle-right"></i> login</a
+                    >
+                    <a href="register.html">
+                        <i class="fas fa-angle-right"></i> register</a
+                    >
+                    <a href="cart.html">
+                        <i class="fas fa-angle-right"></i> cart</a
+                    >
+                </div>
+                <div class="box">
+                    <h3>extra links</h3>
+                    <a href="#!">
+                        <i class="fas fa-angle-right"></i> my account</a
+                    >
+                    <a href="products.html">
+                        <i class="fas fa-angle-right"></i> my order</a
+                    >
+                    <a href="#!">
+                        <i class="fas fa-angle-right"></i> my wishlist</a
+                    >
+                    <a href="#!">
+                        <i class="fas fa-angle-right"></i> terms of use</a
+                    >
+                    <a href="#!">
+                        <i class="fas fa-angle-right"></i> privacy policy</a
+                    >
+                </div>
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#!"> <i class="fab fa-facebook"></i> facebook</a>
+                    <a href="#!"> <i class="fab fa-twitter"></i> twitter</a>
+                    <a href="#!"> <i class="fab fa-twitch"></i> twitch</a>
+                    <a href="#!"> <i class="fab fa-instagram"></i> instagram</a>
+                    <a href="#!"> <i class="fab fa-github"></i> github</a>
+                    <a href="#!"> <i class="fab fa-linkedin"></i> linkedin</a>
+                </div>
+                <div class="box">
+                    <h3>newsletter</h3>
+                    <p>subscribe for latest updates</p>
+                    <form action="">
+                        <input
+                            type="email"
+                            placeholder="enter your email"
+                            id=""
+                        />
+                        <input type="submit" value="subscribe" class="btn" />
+                    </form>
+                </div>
+            </div>
+
+            <div class="credit">
+                created by <span>nguyễn tấn lực</span> | all rights reserved
+            </div>
+        </footer>
+        <!-- footer section end -->
+    </body>
+</html>
