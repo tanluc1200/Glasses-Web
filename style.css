@@ -28,6 +28,35 @@ footer {
   padding: 2rem 9%;
 }
 
+.heading {
+  text-align: center;
+  background-color: #e84393;
+}
+.heading h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.heading p {
+  color: #fff;
+  padding-top: 0.7rem;
+  font-size: 1.7rem;
+}
+.heading p a {
+  color: #fff;
+}
+.heading p a:hover {
+  color: #333;
+}
+
+.title {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -161,7 +190,7 @@ footer {
 .home .slide {
   display: flex;
   align-items: center;
-  height: calc(100vh - 6.6rem);
+  min-height: calc(100vh - 6.6rem);
   padding: 2rem 9%;
   background-size: cover !important;
   background-position: center !important;
@@ -209,6 +238,115 @@ footer {
 }
 .home #prev-slide {
   right: 9rem;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 1.5rem;
+}
+.banner .box {
+  position: relative;
+  height: 30rem;
+  overflow: hidden;
+}
+.banner .box:hover img {
+  transform: scale(1.1);
+}
+.banner .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.banner .box .content {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+}
+.banner .box .content span {
+  font-size: 1.5rem;
+  color: #333;
+}
+.banner .box .content h3 {
+  font-size: 2rem;
+  color: #333;
+  padding-top: 1rem;
+}
+.banner .box .content .btn {
+  padding: 0.6rem 2rem;
+  font-size: 1.5rem;
+}
+
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+.products .box-container .box {
+  border-radius: 0.5rem;
+  text-align: center;
+  border: 0.2rem solid #333;
+}
+.products .box-container .box:hover .image .icons {
+  transform: translateY(0);
+}
+.products .box-container .box .image {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  height: 25rem;
+  width: 100%;
+}
+.products .box-container .box .image .icons {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 0.2rem solid #333;
+  transform: translateY(-7rem);
+}
+.products .box-container .box .image .icons a {
+  line-height: 5rem;
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+  color: #333;
+}
+.products .box-container .box .image .icons a:hover {
+  background: #333;
+  color: #fff;
+}
+.products .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.products .box-container .box .content {
+  padding: 1.5rem 0;
+}
+.products .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #333;
+}
+.products .box-container .box .content .stars {
+  padding: 1rem;
+}
+.products .box-container .box .content .stars i {
+  font-size: 1.4rem;
+  color: #e84393;
+}
+.products .box-container .box .content .price {
+  font-size: 2.2rem;
+  color: #333;
+}
+.products .box-container .box .content .price span {
+  font-size: 1.5rem;
+  color: #666;
+  text-decoration: line-through;
 }
 
 .footer .box-container {
@@ -285,6 +423,7 @@ footer {
     display: inline-block;
   }
   .header .navbar {
+    height: 100vh;
     position: absolute;
     top: 99%;
     left: 0;
@@ -310,10 +449,16 @@ footer {
   .header .navbar ul li ul li a {
     padding-left: 4rem;
   }
+  .home .slide {
+    min-height: 50vh;
+  }
 }
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .home .slide .content h3 {
+    font-size: 4rem;
   }
 }
 
