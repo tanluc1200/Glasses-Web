@@ -455,9 +455,122 @@ footer {
 .register-form input[type=submit]:hover {
   background-color: #e84393;
 }
-.login-form form > a,
-.register-form form > a {
+.login-form .btn,
+.register-form .btn {
   width: 100%;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.about .row .image {
+  flex: 1 1 42rem;
+}
+.about .row .image img {
+  width: 100%;
+  object-fit: cover;
+}
+.about .row .content {
+  flex: 1 1 42rem;
+}
+.about .row .content h3 {
+  font-size: 3.5rem;
+  color: #333;
+  line-height: 2;
+}
+.about .row .content p {
+  font-size: 1.4rem;
+  line-height: 2.5;
+  color: #666;
+}
+.about .icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.about .icons-container .icons {
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #333;
+  text-align: center;
+  cursor: pointer;
+}
+.about .icons-container .icons:hover {
+  background-color: #333;
+}
+.about .icons-container .icons:hover img {
+  filter: invert(1);
+}
+.about .icons-container .icons:hover h3 {
+  color: white;
+}
+.about .icons-container .icons img {
+  height: 7rem;
+  margin-bottom: 1rem;
+}
+.about .icons-container .icons h3 {
+  font-size: 1.7rem;
+  color: #333;
+}
+.about .icons-container .icons p {
+  font-size: 1.4rem;
+  line-height: 2.5;
+  color: #666;
+}
+
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+.blogs .box-container .box {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 0.2rem solid #333;
+}
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+.blogs .box-container .box .image {
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+}
+.blogs .box-container .box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogs .box-container .box .content {
+  padding: 2rem;
+}
+.blogs .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #333;
+  line-height: 2;
+}
+.blogs .box-container .box .content .icons {
+  border-top: 0.2rem solid #333;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogs .box-container .box .content .icons a {
+  font-size: 1.4rem;
+  color: #666;
+}
+.blogs .box-container .box .content .icons a:hover {
+  color: #e84393;
+}
+.blogs .box-container .box .content .icons a i {
+  padding-right: 0.5rem;
+  color: #e84393;
 }
 
 .footer .box-container {

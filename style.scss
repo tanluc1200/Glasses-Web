@@ -451,8 +451,117 @@ footer {
             background-color: $pink;
         }
     }
-    form > a {
+    .btn {
         width: 100%;
+    }
+}
+.about {
+    .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        .image {
+            flex: 1 1 42rem;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .content {
+            flex: 1 1 42rem;
+            h3 {
+                font-size: 3.5rem;
+                color: $black;
+                line-height: 2;
+            }
+            p {
+                font-size: 1.4rem;
+                line-height: 2.5;
+                color: $light-color;
+            }
+        }
+    }
+    .icons-container {
+        @include grid(16rem);
+        margin-top: 2.5rem;
+        .icons {
+            padding: 3rem 2rem;
+            border-radius: 0.5rem;
+            border: $border;
+            text-align: center;
+            cursor: pointer;
+            &:hover {
+                background-color: $black;
+                img {
+                    filter: invert(1);
+                }
+                h3 {
+                    color: white;
+                }
+            }
+            img {
+                height: 7rem;
+                margin-bottom: 1rem;
+            }
+            h3 {
+                font-size: 1.7rem;
+                color: $black;
+            }
+            p {
+                font-size: 1.4rem;
+                line-height: 2.5;
+                color: $light-color;
+            }
+        }
+    }
+}
+.blogs .box-container {
+    @include grid(32rem);
+    .box {
+        border-radius: 0.5rem;
+        overflow: hidden;
+        border: $border;
+        &:hover .image img {
+            transform: scale(1.1);
+        }
+        .image {
+            width: 100%;
+            height: 25rem;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .content {
+            padding: 2rem;
+            h3 {
+                font-size: 2rem;
+                color: $black;
+                line-height: 2;
+            }
+            .icons {
+                border-top: $border;
+                padding-top: 2rem;
+                margin-top: 2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a {
+                    font-size: 1.4rem;
+                    color: $light-color;
+                    &:hover {
+                        color: $pink;
+                    }
+                    i {
+                        padding-right: 0.5rem;
+                        color: $pink;
+                    }
+                }
+            }
+        }
     }
 }
 .footer {
