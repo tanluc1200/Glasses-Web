@@ -522,6 +522,10 @@ footer {
   color: #666;
 }
 
+.blogs h1 {
+  text-align: center;
+  padding: 1rem;
+}
 .blogs .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
